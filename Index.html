@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 30px;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: flex-start;
+            align-items: baseline;
+            position: relative;
+            left: 30px;
+            cursor: pointer;
+        }
+
+        .sections {
+            display: flex;
+            justify-content: space-around;
+            gap: 25px;
+            position: relative;
+            top: 3px;
+            right: 30px;
+            font-size: 14px;
+
+        }
+
+        .name {
+            position: relative;
+            bottom: 3px;
+            left: 5px;
+        }
+
+        .sign {
+            background-color: #000000;
+            color: white;
+            width: 80px;
+            height: 35px;
+            border-radius: 5px;
+            padding-left: 8px;
+            padding-right: 8px;
+            position: relative;
+            bottom: 7px;
+            cursor: pointer;
+
+
+        }
+
+        .signn {
+            background-color: #000000;
+            color: white;
+            width: 80px;
+            height: 35px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .hero {
+            background-color: #F4F6F5;
+            border-radius: 25px;
+            margin-left: 60px;
+            margin-right: 60px;
+            height: 600px;
+            position: relative;
+            top: 20px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .lady {
+            height: 600px;
+            overflow: hidden;
+
+            /* left: 200px; */
+        }
+
+        .text1 {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            left: 140px;
+            top: 80px;
+
+        }
+
+        .slogan {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            position: relative;
+            top: 20px;
+        }
+
+        .companies {
+            background-color: #EBD96B;
+            margin-top: 45px;
+            height: 90px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            align-items: center;
+        }
+
+        .head {
+            display: flex;
+        }
+
+        .model {
+            width: 300px;
+            width: 350px;
+            height: 460px;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            /* box-shadow: 0px  2px 4px rgba(0,0,0,0.2); */
+            margin: 20px;
+            
+        }
+        .model:hover{
+            transform: scale(1.05);
+            
+        }
+
+        .model2 {
+            width: 300px;
+            width: 370px;
+            height: 460px;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            /* box-shadow: 0px  2px 4px rgba(0,0,0,0.2); */
+            margin: 20px;
+        }
+        .model2:hover{
+            transform: scale(1.05);
+        }
+
+        .model3 {
+            width: 500px;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            /* box-shadow: 0px  2px 4px rgba(0,0,0,0.2); */
+            margin: 20px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .didi {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .head {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            justify-content: space-between;
+            margin-left: 25px;
+            margin-right: 20px;
+        }
+
+        .main {
+            font-family: "Poppins", sans-serif;
+            font-weight: 100;
+            font-size: 35px;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+
+        .arr {
+            margin-top: 30px;
+            margin-bottom: 37px;
+            margin-left: 73px;
+            position: relative;
+            /* left: 75px; */
+            font-family: "Poppins", sans-serif;
+            font-weight: 100;
+
+        }
+
+        .offer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            /* height: 450px; */
+        }
+
+        .moffer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-bottom: 7px;
+
+        }
+
+        .join {
+            background-color: #E5C643;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .last {
+            height: 250px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-bottom: 280px;
+            font-size: 15px;
+        }
+
+        .linkk {
+            display: flex;
+            margin-right: 100px;
+            margin-top: 60px;
+            gap: 60px;
+
+        }
+
+        .com {
+            margin-left: 100px;
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .l {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .sml {
+            display: flex;
+            gap: 20px;
+        }
+
+        .downl {
+            display: flex;
+            justify-content: center;
+            gap: 400px;
+            margin-bottom: 50px;
+
+
+        }
+
+        .rit {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 150px;
+            gap: 25px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        .downlly {
+            font-size: 25px;
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                    d="M15.907 11.998 10.332 9.23a.9.9 0 0 1-.16-.037l-.018-.007v6.554c0 .017.008.034.01.051l2.388-2.974 3.355-.82Z" />
+                <path
+                    d="m11.463 4.054 5.579 3.323A4.02 4.02 0 0 1 18.525 9c.332.668.47 1.414.398 2.155a3.07 3.07 0 0 1-.745 1.65 3.108 3.108 0 0 1-1.55.951c-.022.007-.045.005-.07.01-.062.03-.126.057-.191.08l-2.72.667-1.992 2.48c-.18.227-.41.409-.67.534.047.034.085.077.137.107a2.05 2.05 0 0 0 1.995.035c.592-.33 2.15-1.201 4.636-2.892l.28-.19c1.328-.895 3.616-2.442 3.967-4.215a9.94 9.94 0 0 0-1.713-4.154 10.027 10.027 0 0 0-3.375-2.989 10.107 10.107 0 0 0-8.802-.418c1.162.287 2.287.704 3.354 1.243Z" />
+                <path
+                    d="M5.382 17.082v-6.457a3.7 3.7 0 0 1 .45-1.761 3.733 3.733 0 0 1 1.238-1.34 3.915 3.915 0 0 1 3.433-.245c.176.03.347.084.508.161l5.753 2.856c.082.05.161.105.236.165a2.128 2.128 0 0 0-.953-1.455l-5.51-3.284c-1.74-.857-3.906-1.523-5.244-1.097a9.96 9.96 0 0 0-2.5 3.496 9.895 9.895 0 0 0 .283 8.368 9.973 9.973 0 0 0 2.73 3.322 17.161 17.161 0 0 1-.424-2.729Z" />
+                <path
+                    d="m19.102 16.163-.272.183c-2.557 1.74-4.169 2.64-4.698 2.935a4.083 4.083 0 0 1-2 .53 3.946 3.946 0 0 1-1.983-.535 3.788 3.788 0 0 1-1.36-1.361 3.752 3.752 0 0 1-.51-1.85 1.812 1.812 0 0 1-.043-.26V9.143c0-.024.009-.046.01-.07-.056.02-.11.043-.162.07a1.796 1.796 0 0 0-.787 1.516v6.377a10.67 10.67 0 0 0 1.113 4.27 10.11 10.11 0 0 0 8.505-.53 10.022 10.022 0 0 0 3.282-2.858 9.936 9.936 0 0 0 1.75-3.97 19.615 19.615 0 0 1-2.845 2.216Z" />
+            </svg>
+            <h2 class="name">FASHION</h2>
+
+        </div>
+        <div class="sections">
+            <P style="cursor: pointer;">CATALOGUE</P>
+            <P style="cursor: pointer;">FASHION</P>
+            <P style="cursor: pointer;">FAVOURITE</P>
+            <P style="cursor: pointer;">LIFESTYLE</P>
+            <button class="sign">SIGN UP</button>
+        </div>
+    </div>
+    <div class="hero">
+        <div>
+            <div class="text1">
+                <div class="main">
+                    <div style="background-color: #ffffff; transform: rotate(-1deg); width: 230px;">
+                        <h1 style="padding-left: 10px;">LET'S</h1>
+                    </div>
+                    <H1>EXPLORE</H1>
+                    <div style="background-color: #EBD96B; transform: rotate(-1deg); width: 300px;">
+                        <h1 style="padding-left: 10px;">UNIQUE</h1>
+                    </div>
+                    <h1>CLOTHS.</h1>
+                </div>
+                <div class="slogan">
+                    <p>Live for influential and innovative fashion</p>
+                    <div class="shop">
+                        <button
+                            style="width: 100PX; padding-top: 5px; padding-bottom: 5px; position: relative; top: 20px;"
+                            class="sign">SHOP
+                            NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="./Image/star-svgrepo-com.svg"
+                style="width: 80px; position: relative; left: 200px ; bottom: 10px ;" alt="">
+            <img src="./Image/star-svgrepo-com.svg"
+                style="width: 80px; position: relative; left: 700px ; bottom: 60px ;" alt="">
+            <img src="./Image/star-svgrepo-com.svg"
+                style="width: 60px; position: relative; left: 500px ; bottom: 500px ;" alt="">
+            <img class="lady" src="./Image/herom.png" alt="">
+        </div>
+    </div>
+    <div class="companies">
+        <img style="width: 60px;" src="./Image/h-m-1.svg" alt="">
+        <img style="width: 60px;" src="./Image/obey-logo-svgrepo-com.svg" alt="">
+        <a title="[[:w:|]], Public domain, via Wikimedia Commons" href="#"><img width="120px" alt="Shopify logo"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/960px-Shopify_logo_2018.svg.png"></a>
+        <img style="width: 90px; position: relative; bottom: 2px;" src="./Image/lacoste-logo.svg" alt="">
+        <img style="width: 80px;" src="./Image/levis-logo-svgrepo-com.svg" alt="">
+        <a title="Amazon.com, Inc., Public domain, via Wikimedia Commons" href="#"><img width="120px"
+                style="position: relative; top: 4px;" alt="Logo of Amazon from 2012 to 2024"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/960px-Amazon_logo.svg.png"></a>
+
+    </div>
+    <div class="cloths">
+        <div class="arr">
+            <h2>NEW ARRIVALS</h2>
+        </div>
+        <div class="didi">
+            <div class="card">
+                <div class="cimg" style="cursor: pointer;" >
+                    <img class="model" src="./Image/ONE2.png" alt="">
+                </div>
+                <div class="head">
+                    <div class="n">
+                        <h3>Hoodies & Sweatshirt</h3>
+                        <p style="margin-top: 10px; color: rgb(123, 123, 123);">Explore Now!</p>
+                    </div>
+                    <div style="cursor: pointer;" >
+                        <svg width="30px" height="100%" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cimg" style="cursor: pointer;" >
+                    <img class="model2" src="./Image/two22.png" alt="">
+                </div>
+                <div class="head">
+                    <div class="n">
+                        <h3>Coats & Parkas</h3>
+                        <p style="margin-top: 10px; color: rgb(123, 123, 123);">Explore Now!</p>
+                    </div>
+                    <div style="cursor: pointer;" >
+                        <svg width="30px" height="100%" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cimg" style="cursor: pointer;" >
+                    <img class="model" src="./Image/three2.png" alt="">
+                </div>
+                <div class="head">
+                    <div class="n">
+                        <h3>Tees & T-Shirt</h3>
+                        <p style="margin-top: 10px; color: rgb(123, 123, 123);">Explore Now!</p>
+                    </div>
+                    <div style="cursor: pointer;" >
+                        <svg width="30px" height="100%" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="moffer" style="margin-top: 35px; background-color: #E5C643; ">
+        <div class="offer">
+            <div class="grl" style=" padding-left: 300px; position: relative; top: 10px; overflow-y: hidden; ">
+                <!-- <img src="./Image/star-svgrepo-com.svg"
+                    style="width: 80px; position: relative; left: 0px ; bottom: 0px ;" alt="">
+                <img src="./Image/star-svgrepo-com.svg"
+                    style="width: 80px; position: relative; left: 0px ; bottom: 0px ;" alt="">
+                <img src="./Image/star-svgrepo-com.svg"
+                    style="width: 60px; position: relative; left: 0px ; bottom: 0px ;" alt=""> -->
+                <img style="width: 250px" src="./Image/yelo2.png" alt="">
+            </div>
+            <div>
+                <div class="text1" style="margin-left:150px;  ">
+                    <div class="main">
+                        <div style="background-color: #ffffff; transform: rotate(-1deg); width: 310px;">
+                            <h1 style="padding-left: 10px;">PAYDAY</h1>
+                        </div>
+                        <h1>SALE NOW</h1>
+                    </div>
+                    <div class="slogan">
+                        <p>Spend minimal ₹500 get 30% off voucher</p>
+                        <p>code for your next purchase</p>
+                        <div style="margin-top: 20px;">
+                            <p style="font-weight: 900;">1 June - 10 June 2026</p>
+                            <p>*Terms & Conditions apply</p>
+                        </div>
+                        <div class="shop">
+                            <button
+                                style="width: 100PX; padding-top: 5px; padding-bottom: 5px; position: relative; top: 20px;"
+                                class="sign">SHOP NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cloths" style="padding-bottom: 40px;">
+        <div class="arr">
+            <h2>Young's Favourite</h2>
+        </div>
+        <div class="didi">
+            <div class="card">
+                <div class="cimg">
+                    <img class="model3" src="./Image/g1.png" alt="">
+                </div>
+                <div class="head">
+                    <div class="n">
+                        <h3>Trending on instagram</h3>
+                        <p style="margin-top: 10px; color: rgb(123, 123, 123);">Buy Now!</p>
+                    </div>
+                    <div>
+                        <svg width="30px" height="100%" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cimg">
+                    <img class="model3" style="height: 380px; width: 540px;" src="./Image/g2.png" alt="">
+                </div>
+                <div class="head">
+                    <div class="n">
+                        <h3>All Under $40</h3>
+                        <p style="margin-top: 10px; color: rgb(123, 123, 123);">Buy Now!</p>
+                    </div>
+                    <div>
+                        <svg width="30px" height="100%" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="downl">
+        <div class="rit">
+            <div class="downlly">
+                <h2>DOWNLOAD APP &</h2>
+                <h2>GET THE VOUCHER !</h2>
+            </div>
+            <div style="font-size: 16px; color: #8E8E8E; " class="p">
+                <p>Get 30% off for first transaction using</p>
+                <p>Randovision mobile app for now.</p>
+            </div>
+            <div style="display: flex; gap: 15px;">
+                <img style="width: 100px;" src="./Image/appstore.png" alt="">
+                <img style="width: 100px;" src="./Image/playstore.png" alt="">
+            </div>
+        </div>
+        <div class="phone">
+            <img style="width: 500px; margin-right: 80px; " src="./Image/mobile.png" alt="">
+        </div>
+    </div>
+    <div class="join">
+        <div
+            style="padding-top: 90px; padding-bottom: 90px; display: flex; flex-direction: column; align-items: center;">
+            <div class="he" style="display: flex; flex-direction: column; align-items: center;">
+                <h2 style="color: #fff; font-weight: 800; ">JOIN SHOPPING COMMUNITY TO</h2>
+                <h2 style="color: #fff; font-weight: 800; ">GET MONTHLY PROMO</h2>
+            </div>
+            <div class="paa">
+                <p style="color: #fff; font-weight: 100; margin-top: 20px; margin-bottom: 20px; ">Type your email down
+                    below and be young wild generation</p>
+            </div>
+            <div class="inp"
+                style="background-color: #fff; height: 45px; width: 250px; display: flex; padding: 5px; border-radius: 9px; gap: 5px;">
+                <input style="border: none; padding-left: 20px;" placeholder="Add your email here" type="email">
+                <button class="signn">SEND</button>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #000000;" class="last">
+        <div class="com">
+            <div>
+                <h2 class="name" style="color: #fff; font-weight: 900; ">FASHION</h2>
+            </div>
+            <div style="color: #8E8E8E; font-size: 13px;" class="pro">
+                <p>Complete your style with awesome</p>
+                <p>cloths from us</p>
+            </div>
+            <div>
+                <div class="sml">
+                    <img style="width: 30px;" src="./Image/facebook-color-svgrepo-com.svg" alt="">
+                    <img style="width: 30px;" src="./Image/instagram-round-svgrepo-com.svg" alt="">
+                    <img style="width: 30px;" src="./Image/twitter-rounded-svgrepo-com.svg" alt="">
+                    <img style="width: 30px;" src="./Image/linkedinv1-fill-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div style="color: #fff;" class="linkk">
+            <div class="l">
+                <p style="color: #fff; font-weight: 700; ">Company</p>
+                <p>About</p>
+                <p>Contact Us</p>
+                <p>Support</p>
+                <p>Careers</p>
+            </div>
+            <div class="l">
+                <p style="color: #fff; font-weight: 700; ">Quick Link</p>
+                <p>Share Location</p>
+                <p>Orders Tracking</p>
+                <p>Size Guide</p>
+                <p>FAQs</p>
+            </div>
+            <div class="l">
+                <p style="color: #fff; font-weight: 700; ">Legal</p>
+                <p>Terms & condtions</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
