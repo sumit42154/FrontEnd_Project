@@ -1,0 +1,1 @@
+https://shopingsite.pages.dev/
